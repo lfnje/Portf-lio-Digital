@@ -1,0 +1,643 @@
+/* ==================== Importando Fontes ==================== */
+/* Importa as fontes 'Playfair Display' (para títulos) e 'Poppins' (para o corpo do texto) do Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap');
+
+/* ==================== Layout Geral do Corpo da Página ==================== */
+body {
+  margin: 0; /* Remove margens padrão do corpo da página. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte principal para todo o texto. */
+  background-color: #1e1e2f; /* Cor de fundo escura para a página. */
+  color: #f0f0f0; /* Cor do texto padrão para a página. */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade. */
+  padding: 0; /* Remove preenchimento padrão do corpo da página. */
+}
+
+/* ==================== Cabeçalho Principal (Hero Header) ==================== */
+.hero-header {
+  /* Define um gradiente de fundo para o cabeçalho. */
+  background: linear-gradient(to right, #002b36, #004466, #336699);
+  color: #ff6b6b; /* Cor de texto padrão para o cabeçalho. */
+  padding: 20px 0; /* Preenchimento superior e inferior. */
+  display: flex; /* Habilita Flexbox para alinhamento dos itens internos. */
+  flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro). */
+  justify-content: flex-start; /* Alinha o conteúdo ao topo do container. */
+  align-items: center; /* Centraliza os itens horizontalmente. */
+  text-align: center; /* Centraliza o texto dentro do cabeçalho. */
+  min-height: 100vh; /* Garante que o cabeçalho ocupe a altura total da viewport. */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento. */
+}
+
+/* ==================== Conteúdo Principal ==================== */
+main {
+  padding: 40px 5%; /* Preenchimento interno para o conteúdo principal. */
+  max-width: none; /* Permite que o conteúdo principal ocupe a largura máxima disponível. */
+}
+
+/* Estilos para todas as seções (Sobre, Formação, Habilidades, etc.) */
+section {
+  padding: 30px 10px; /* Preenchimento interno para cada seção. */
+  text-align: left; /* Alinha o texto à esquerda dentro das seções. */
+  margin-bottom: 60px; /* Margem inferior para separar as seções. */
+}
+
+/* Estilos para os títulos (h2) de cada seção. */
+section h2 {
+  font-size: 1.4em; /* Tamanho da fonte para os títulos. */
+  margin-bottom: 20px; /* Margem inferior para separar o título do conteúdo. */
+  color: #4fc3f7; /* Cor azul claro para os títulos. */
+  position: relative; /* Necessário para posicionar o pseudo-elemento ::after. */
+  font-family: 'Playfair Display', serif; /* Define a fonte Playfair Display para os títulos. */
+}
+
+/* Pseudo-elemento para criar uma linha decorativa abaixo dos títulos das seções. */
+section h2::after {
+  content: ''; /* Conteúdo vazio para o pseudo-elemento. */
+  display: block; /* Transforma o pseudo-elemento em um bloco para ocupar sua própria linha. */
+  width: 50px; /* Largura da linha. */
+  height: 4px; /* Altura da linha. */
+  background: linear-gradient(90deg, #ff6b6b, #4fc3f7); /* Gradiente de cor para a linha. */
+  margin-top: 8px; /* Margem superior para separar a linha do título. */
+  border-radius: 2px; /* Cantos arredondados para a linha. */
+}
+
+/* Estilos para parágrafos dentro das seções. */
+section p {
+  font-size: 0.95em; /* Tamanho da fonte para os parágrafos. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para os parágrafos. */
+}
+
+/* ==================== Habilidades Técnicas ==================== */
+.habilidades {
+  display: flex; /* Habilita Flexbox para organizar as habilidades. */
+  flex-wrap: wrap; /* Permite que as habilidades quebrem para a próxima linha se não houver espaço. */
+  gap: 20px; /* Espaço entre as habilidades. */
+  justify-content: center; /* Centraliza as habilidades horizontalmente. */
+}
+
+/* Estilos para cada item de habilidade individual. */
+.habilidade {
+  display: flex; /* Habilita Flexbox para ícone e texto. */
+  flex-direction: row; /* Organiza o ícone e o texto lado a lado. */
+  align-items: center; /* Alinha ícone e texto verticalmente ao centro. */
+  justify-content: center; /* Centraliza ícone e texto horizontalmente. */
+  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente. */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil. */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo. */
+  border-radius: 15px; /* Cantos arredondados. */
+  padding: 20px; /* Preenchimento interno. */
+  width: 105px; /* Largura fixa. */
+  height: 105px; /* Altura fixa. */
+  font-size: 1em; /* Tamanho da fonte. */
+  margin-bottom: 20px; /* Margem inferior (considerar usar 'gap' no container pai). */
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2); /* Sombra para profundidade. */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos de hover. */
+  gap: 10px; /* Espaço entre o ícone e o texto da habilidade. */
+}
+
+/* Estilos para a imagem do ícone dentro de cada habilidade. */
+.habilidade img {
+  width: 50px; /* Largura da imagem. */
+  height: 50px; /* Altura da imagem. */
+}
+
+/* Estilos para o texto (nome da habilidade) dentro de cada habilidade. */
+.habilidade span {
+  color: #fff; /* Cor do texto. */
+  font-size: 0.9em; /* Tamanho da fonte. */
+}
+
+/* Estilos gerais para itens de lista (usado em Formação, Experiência, Idiomas). */
+li {
+  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente. */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil. */
+  backdrop-filter: blur(10px); /* Efeito de desfoque. */
+  border-radius: 15px; /* Cantos arredondados. */
+  padding: 13px 16px; /* Preenchimento interno. */
+  font-size: 0.9em; /* Tamanho da fonte. */
+  margin-bottom: 20px; /* Margem inferior para separar os itens. */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra para profundidade. */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos de hover. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins. */
+  list-style: none; /* Remove o marcador de lista. */
+}
+
+/* Efeitos de hover para itens de lista e habilidades. */
+li:hover,
+.habilidade:hover {
+  transform: translateY(-5px) scale(1.02); /* Move o item levemente para cima e aumenta um pouco. */
+  box-shadow: 0 12px 48px rgba(255, 255, 255, 0.1); /* Sombra mais intensa. */
+}
+
+/* ==================== Estilos para Imagens em Geral ==================== */
+img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu container. */
+  border-radius: 10px; /* Cantos arredondados para todas as imagens. */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para efeitos de hover. */
+}
+
+/* Efeito de hover para imagens. */
+img:hover {
+  transform: scale(1.02); /* Aumenta a imagem levemente. */
+  filter: brightness(1.1); /* Aumenta o brilho da imagem. */
+}
+
+/* ==================== Estilos para Links (âncoras) ==================== */
+a {
+  color: #ff6b6b; /* Cor do texto dos links. */
+  text-decoration: none; /* Remove o sublinhado padrão dos links. */
+  position: relative; /* Necessário para posicionar o pseudo-elemento ::after. */
+  transition: color 0.3s ease; /* Transição suave para a cor do texto. */
+}
+
+/* Pseudo-elemento para criar um sublinhado animado nos links. */
+a::after {
+  content: ''; /* Conteúdo vazio. */
+  display: block; /* Transforma em bloco. */
+  width: 0; /* Começa com largura zero. */
+  height: 2px; /* Altura do sublinhado. */
+  background: #ff6b6b; /* Cor do sublinhado. */
+  transition: width 0.3s ease; /* Transição suave para a largura. */
+}
+
+/* Expande o sublinhado quando o mouse passa sobre o link. */
+a:hover::after {
+  width: 100%; /* Aumenta a largura para 100%. */
+}
+
+/* ==================== Rodapé da Página ==================== */
+footer {
+  margin-top: 50px; /* Margem superior. */
+  text-align: center; /* Centraliza o texto. */
+  font-size: 0.9em; /* Tamanho da fonte. */
+  color: #888; /* Cor do texto cinza. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins. */
+}
+
+/* ==================== Animações CSS Padrão ==================== */
+/* Animação para um efeito de fade-in e slide-up. */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa totalmente transparente. */
+    transform: translateY(-20px); /* Começa 20px acima da posição final. */
+  }
+  to {
+    opacity: 1; /* Termina totalmente visível. */
+    transform: translateY(0); /* Termina na posição original. */
+  }
+}
+
+/* ==================== Responsividade Geral (para telas menores que 768px) ==================== */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem; /* Ajusta o preenchimento das seções para telas menores. */
+  }
+
+  h1, h2 {
+    font-size: 1.8rem; /* Reduz o tamanho da fonte dos títulos. */
+    text-align: center; /* Centraliza os títulos. */
+  }
+
+  p {
+    font-size: 1rem; /* Ajusta o tamanho da fonte dos parágrafos. */
+    text-align: center; /* Centraliza os parágrafos. */
+  }
+}
+
+/* ==================== Menu de Navegação Fixo ==================== */
+.nav-fixo {
+  position: fixed; /* Fixa o menu na tela. */
+  top: 20px; /* 20px do topo. */
+  left: 50%; /* 50% da esquerda. */
+  transform: translateX(-50%); /* Centraliza horizontalmente. */
+  background: rgba(30, 30, 30, 0.7); /* Fundo semi-transparente. */
+  padding: 15px 25px; /* Preenchimento interno. */
+  border-radius: 10px; /* Cantos arredondados. */
+  z-index: 999; /* Garante que o menu esteja acima de outros elementos. */
+  display: flex; /* Habilita Flexbox para os links. */
+  gap: 20px; /* Espaço entre os links. */
+  font-size: 16px; /* Tamanho da fonte padrão. */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra. */
+}
+
+/* Estilos para os links dentro do menu fixo. */
+.nav-fixo a {
+  color: #ff6b6b; /* Cor do texto. */
+  font-weight: 600; /* Negrito. */
+  text-decoration: none; /* Remove sublinhado. */
+  font-size: 0.85rem; /* Tamanho da fonte. */
+  transition: color 0.3s ease; /* Transição suave para a cor. */
+}
+
+/* Efeito de hover para os links do menu fixo. */
+.nav-fixo a:hover {
+  color: #fff; /* Altera a cor para branco. */
+}
+
+/* Classe para ocultar o menu fixo. */
+.nav-fixo.oculto {
+  opacity: 0; /* Totalmente transparente. */
+  pointer-events: none; /* Desabilita interações com o mouse. */
+  transition: opacity 0.3s ease; /* Transição suave para a opacidade. */
+}
+
+/* ==================== Botão "Voltar ao Topo" Fixo ==================== */
+.btn-voltar-fixo,
+#btn-voltar-menu {
+  position: fixed; /* Fixa o botão na tela. */
+  bottom: 10px; /* 10px da parte inferior. */
+  right: 10px; /* 10px da direita. */
+  background-color: #ff6b6b; /* Cor de fundo. */
+  color: white; /* Cor do texto. */
+  border-radius: 50%; /* Torna o botão redondo. */
+  width: 40px; /* Largura. */
+  height: 40px; /* Altura. */
+  font-size: 1.2rem; /* Tamanho da fonte. */
+  font-weight: bold; /* Negrito. */
+  text-align: center; /* Centraliza o texto. */
+  line-height: 40px; /* Alinha o texto verticalmente ao centro. */
+  text-decoration: none; /* Remove sublinhado. */
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.6); /* Sombra. */
+  z-index: 1000; /* Garante que esteja acima de outros elementos. */
+  display: none; /* Escondido por padrão (controlado por JS). */
+  opacity: 0; /* Transparente por padrão (controlado por JS). */
+  pointer-events: none; /* Desabilita interações quando oculto. */
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease; /* Transições suaves. */
+}
+
+/* Classe para mostrar o botão "Voltar ao Topo". */
+.btn-voltar-fixo.show,
+#btn-voltar-menu.show {
+  display: inline-block; /* Exibe o botão. */
+  opacity: 1; /* Torna o botão visível. */
+  pointer-events: auto; /* Habilita interações. */
+  transform: scale(1.05); /* Aumenta ligeiramente. */
+}
+
+/* Efeito de hover para o botão "Voltar ao Topo". */
+#btn-voltar-menu:hover {
+  background-color: #e05555; /* Altera a cor de fundo. */
+  transform: scale(1.15); /* Aumenta mais ao passar o mouse. */
+}
+
+/* ==================== Rolagem Suave da Página ==================== */
+html {
+  scroll-behavior: smooth; /* Habilita rolagem suave ao navegar por âncoras. */
+}
+
+/* ==================== Estilos Específicos do Hero Header ==================== */
+.hero-nome {
+  margin-top: 10px; /* Margem superior. */
+  display: flex; /* Habilita Flexbox. */
+  flex-direction: column; /* Organiza itens em coluna. */
+  align-items: center; /* Centraliza itens horizontalmente. */
+}
+
+/* Estilo para o nome "LUIZ FILIPE NOGUEIRA" no cabeçalho. */
+.hero-left {
+  font-size: 5rem; /* Tamanho grande da fonte. */
+  font-weight: bold; /* Negrito. */
+  margin-bottom: 20px; /* Margem inferior. */
+  font-family: 'Playfair Display', serif; /* Define a fonte Playfair Display. */
+  color: #ff6b6b; /* Cor do texto em vermelho. */
+}
+
+/* Estilo para a imagem de perfil no cabeçalho. */
+.hero-image {
+  width: 400px; /* Largura fixa. */
+  height: 400px; /* Altura fixa. */
+  border-radius: 15px; /* Cantos arredondados. */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Sombra. */
+}
+
+/* Container para a imagem de perfil. */
+.hero-image-wrapper {
+  display: flex; /* Habilita Flexbox. */
+  align-items: center; /* Alinha itens verticalmente. */
+  gap: 1rem; /* Espaço entre itens. */
+  margin-top: 20px; /* Margem superior. */
+}
+
+/* Estilo para o subtítulo "DEVELOPER" vertical. */
+.vertical-subtitle {
+  position: absolute; /* Posição absoluta em relação ao pai `.hero-header`. */
+  right: 0; /* Alinha à direita. */
+  top: 10%; /* Posiciona a 10% do topo. */
+  transform: translateY(-50%); /* Ajusta verticalmente para centralizar na linha do `top`. */
+  writing-mode: vertical-rl; /* Escreve o texto verticalmente (direita para esquerda). */
+  text-orientation: mixed; /* Permite que o texto vire conforme a escrita vertical. */
+  font-size: 0.8rem; /* Tamanho da fonte. */
+  letter-spacing: 0.2rem; /* Espaçamento entre letras. */
+  color: #ffffffaa; /* Cor branca semi-transparente. */
+  font-family: 'Playfair Display', serif; /* Define a fonte Playfair Display. */
+}
+
+/* ==================== Informações de Contato/Descrição no Cabeçalho ==================== */
+.informacoes {
+  text-align: center; /* Centraliza o texto. */
+  margin-top: 20px; /* Margem superior. */
+}
+
+/* Tamanho da fonte e cor para as informações de contato/descrição. */
+.tamanho-informacoes {
+  font-size: 18px; /* Tamanho da fonte. */
+  max-width: 100%; /* Ocupa a largura máxima disponível. */
+  color: #f36e6e; /* Cor do texto padrão. Retornando ao valor original para não afetar outras coisas. */
+}
+
+/* **NOVO ESTILO**: Cor vermelha para o título específico do projeto em "Experiência" */
+.titulo-projeto-experiencia {
+  color:#ff6b6b; /* Cor vermelha para o título do projeto. */
+  font-weight: bold; /* Adiciona negrito para destaque. */
+}
+
+
+/* Garante que o subtítulo não quebre linha. */
+.titulo-sub {
+  white-space: nowrap; /* Impede a quebra de linha do texto. */
+}
+
+/* ==================== Classes para Animações de Entrada ==================== */
+/* Animação de fade-in e slide-up para elementos. */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0; /* Começa invisível. */
+    transform: translateY(40px); /* Começa 40px abaixo. */
+  }
+  100% {
+    opacity: 1; /* Torna-se visível. */
+    transform: translateY(0); /* Sobe para a posição final. */
+  }
+}
+
+/* Estilo para o cabeçalho animado. */
+.animate-header {
+  animation: fadeSlideUp 1s ease-out forwards; /* Aplica a animação ao carregar a página. */
+}
+
+/* Estilo para elementos que serão animados com fade-in e slide-up. */
+.animate-element {
+  opacity: 0; /* Começa invisível. */
+  transform: translateY(20px); /* Começa 20px abaixo. */
+  transition: all 0.8s ease-out; /* Transição para as propriedades (usada pelo JS). */
+}
+
+/* Estilo para textos que serão animados com fade-in e scale. */
+.animate-text {
+  opacity: 0; /* Começa invisível. */
+  transform: scale(0.95); /* Começa ligeiramente menor. */
+  transition: all 0.8s ease-out; /* Transição para as propriedades (usada pelo JS). */
+}
+
+/* ==================== Alerta de Disponibilidade ==================== */
+.alerta-disponibilidade {
+  display: flex; /* Habilita Flexbox. */
+  align-items: center; /* Alinha itens verticalmente ao centro. */
+  gap: 10px; /* Espaço entre os itens. */
+  background: rgba(79, 195, 247, 0.1); /* Fundo semi-transparente. */
+  border-left: 5px solid #4caf50; /* Borda esquerda verde. */
+  padding: 10px 15px; /* Preenchimento interno. */
+  border-radius: 8px; /* Cantos arredondados. */
+  font-size: 1rem; /* Tamanho da fonte. */
+  color: #4fc3f7; /* Cor do texto. */
+  font-weight: bold; /* Negrito. */
+  max-width: 450px; /* Largura máxima. */
+  margin: 20px auto; /* Margem superior/inferior e centralização horizontal. */
+  animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in. */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra. */
+}
+
+/* O indicador de disponibilidade (círculo verde). */
+.alerta-disponibilidade .indicador {
+  width: 12px; /* Largura. */
+  height: 12px; /* Altura. */
+  border-radius: 50%; /* Torna o elemento redondo. */
+  background-color: #4caf50; /* Cor de fundo verde. */
+  box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); /* Sombra inicial transparente para o efeito de pulso. */
+  animation: pulse 2s infinite; /* Aplica a animação de pulso. */
+}
+
+/* Animação para o efeito de pulso do indicador. */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); /* Sombra inicial. */
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); /* Expande a sombra e a torna transparente. */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); /* Retorna à sombra inicial, completando o ciclo. */
+  }
+}
+
+/* ==================== Estilos para Links de Redes Sociais ==================== */
+.social-links {
+  margin-top: 2rem; /* Margem superior. */
+  text-align: center; /* Centraliza o texto. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins. */
+  color: #ffffff; /* Cor do texto. */
+}
+
+/* Parágrafo de instrução nas redes sociais. */
+.social-links p {
+  margin-bottom: 0.75rem; /* Margem inferior. */
+  font-size: 1rem; /* Tamanho da fonte. */
+  color: #ccc; /* Cor cinza claro. */
+}
+
+/* Estilos para cada link de rede social. */
+.social-link {
+  display: inline-flex; /* Habilita Flexbox para ícone e texto. */
+  align-items: center; /* Alinha verticalmente ao centro. */
+  gap: 8px; /* Espaço entre ícone e texto. */
+  margin: 0.5rem; /* Margem externa. */
+  padding: 0.5rem 1rem; /* Preenchimento interno. */
+  border: 2px solid #00ffee; /* Borda turquesa. */
+  border-radius: 8px; /* Cantos arredondados. */
+  color: #00ffee; /* Cor do texto turquesa. */
+  text-decoration: none; /* Remove sublinhado. */
+  font-weight: 500; /* Peso da fonte. */
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades. */
+}
+
+/* Efeito de hover para os links de redes sociais. */
+.social-link:hover {
+  background-color: #00ffee; /* Altera o fundo para turquesa. */
+  color: #1a1a1a; /* Altera a cor do texto para cinza escuro. */
+  box-shadow: 0 0 10px rgba(0, 255, 238, 0.5); /* Sombra turquesa. */
+}
+
+/* Estilos para os ícones (imagens) dentro dos links de redes sociais. */
+.social-link img {
+  width: 20px; /* Largura do ícone. */
+  height: 20px; /* Altura do ícone. */
+  filter: brightness(0) invert(1); /* Inverte a cor do ícone para branco. */
+  transition: filter 0.3s; /* Transição suave para o filtro. */
+}
+
+/* Remove o filtro de cor ao passar o mouse, mostrando a cor original do ícone. */
+.social-link:hover img {
+  filter: brightness(1) invert(0); /* Remove o filtro de inversão. */
+}
+
+/* ==================== Responsividade Específica para Telas Menores ==================== */
+/* Telas até 768px (tablets e celulares grandes). */
+@media screen and (max-width: 768px) {
+  /* Ajusta a largura da imagem do herói para telas menores. */
+  .hero-image {
+    width: 100px;
+  }
+
+  /* Ajusta a posição e o tamanho do subtítulo vertical. */
+  .vertical-subtitle {
+    font-size: 0.75rem; /* Reduz o tamanho da fonte. */
+    top: 0.5rem; /* Reposiciona mais próximo do topo. */
+    right: 0.5rem; /* Reposiciona mais próximo da direita. */
+  }
+}
+
+/* Telas até 480px (celulares). */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte base do corpo. */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte para h1. */
+  }
+
+  h2 {
+    font-size: 1.6rem; /* Reduz ainda mais o tamanho da fonte para h2. */
+  }
+
+  /* Ajusta o layout do cabeçalho para dispositivos muito pequenos. */
+  .hero-header {
+    flex-direction: column; /* Coloca os itens em coluna. */
+    justify-content: space-around; /* Distribui o espaço entre os itens. */
+  }
+
+  /* Ajusta a largura da imagem do herói para telas muito pequenas. */
+  .hero-image {
+    width: 160px;
+  }
+
+  /* Ajusta o subtítulo vertical para telas muito pequenas. */
+  .vertical-subtitle {
+    writing-mode: vertical-rl; /* Mantém a escrita vertical. */
+    text-orientation: upright; /* Orienta o texto para cima. */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte para legibilidade. */
+    font-weight: bold; /* Negrito. */
+    color: white; /* Cor branca. */
+    opacity: 0.8; /* Transparência. */
+    position: absolute; /* Posição absoluta. */
+    right: 20px; /* 20px da direita. */
+    top: 50%; /* 50% do topo. */
+    transform: translateY(-50%); /* Centraliza verticalmente. */
+    letter-spacing: 0.2em; /* Espaçamento entre letras. */
+  }
+}
+
+/* ==================== Classes de Utilidade ==================== */
+/* Classe para esconder elementos. */
+.hidden {
+  display: none; /* Não exibe o elemento. */
+}
+
+/* ==================== Estilos do Carrossel de Certificados ==================== */
+.carousel-container {
+  position: relative; /* Necessário para posicionar botões de navegação. */
+  width: 100%; /* Ocupa a largura total do container pai. */
+  max-width: 1000px; /* Largura máxima do carrossel. */
+  margin: 0 auto; /* Centraliza o carrossel horizontalmente. */
+  overflow: hidden; /* Esconde o conteúdo que transborda (os outros cartões). */
+}
+
+/* Slide (faixa) que contém todos os cartões de certificado. */
+.carousel-slide {
+  display: flex; /* Habilita Flexbox para alinhar os cartões. */
+  transition: transform 0.5s ease-in-out; /* Transição suave ao mover o slide. */
+}
+
+/* Estilos para cada cartão de certificado dentro do carrossel. */
+.cert-card {
+  min-width: 100%; /* Garante que cada cartão ocupe 100% da largura do slide. */
+  box-sizing: border-box; /* Inclui padding no tamanho total. */
+  padding: 20px; /* Preenchimento interno. */
+  text-align: justify; /* Justifica o texto. */
+}
+
+/* Imagens dos certificados dentro dos cartões. */
+.cert-card img {
+  width: 85%; /* Largura da imagem do certificado. */
+  display: block; /* Torna a imagem um bloco para poder centralizar. */
+  margin: 10px auto; /* Centraliza a imagem horizontalmente e adiciona margem. */
+  border-radius: 8px; /* Cantos arredondados. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra suave. */
+}
+
+/* Estilos para os botões de navegação (anterior/próximo) do carrossel. */
+.carousel-btn {
+  position: absolute; /* Posição absoluta em relação ao container do carrossel. */
+  top: 50%; /* Posiciona 50% do topo. */
+  transform: translateY(-50%); /* Ajusta verticalmente para centralizar. */
+  display: flex; /* Habilita Flexbox para alinhar o ícone do botão. */
+  align-items: center; /* Alinha o ícone verticalmente. */
+  justify-content: center; /* Alinha o ícone horizontalmente. */
+  background: transparent; /* Fundo transparente. */
+  border: none; /* Sem borda. */
+  border-radius: 0; /* Sem cantos arredondados. */
+  padding: 0; /* Sem preenchimento. */
+  width: auto; /* Largura automática. */
+  height: auto; /* Altura automática. */
+  color: white; /* Cor do ícone (seta). */
+  font-size: 2rem; /* Tamanho do ícone. */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável. */
+  z-index: 2; /* Garante que os botões estejam acima do conteúdo do carrossel. */
+  transition: color 0.3s ease; /* Transição suave para a cor ao passar o mouse. */
+}
+
+/* Efeito de hover para os botões do carrossel. */
+.carousel-btn:hover {
+  color: #ff6b6b; /* Altera a cor do ícone. */
+}
+
+/* Posicionamento do botão "anterior". */
+.carousel-btn.prev {
+  left: 10px; /* 10px da esquerda. */
+}
+
+/* Posicionamento do botão "próximo". */
+.carousel-btn.next {
+  right: 10px; /* 10px da direita. */
+}
+
+/* ==================== Seção de Idiomas ==================== */
+#idiomas {
+  margin-top: 50px; /* Margem superior. */
+  color: #c0caf5; /* Cor do texto. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins. */
+}
+
+/* Remove marcadores de lista e padding padrão para a lista de idiomas. */
+#idiomas ul {
+  list-style: none; /* Remove marcadores. */
+  padding: 0; /* Remove preenchimento. */
+  margin: 0; /* Remove margem. */
+}
+
+/* Estilos para cada item de idioma individual. */
+#idiomas li {
+  background-color: #24283b; /* Cor de fundo escura. */
+  color: #fff; /* Cor do texto branco. */
+  padding: 12px 16px; /* Preenchimento interno. */
+  border-radius: 10px; /* Cantos arredondados. */
+  margin-bottom: 12px; /* Margem inferior para separar os itens. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra. */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para hover. */
+  font-size: 16px; /* Tamanho da fonte. */
+}
+
+/* Efeito de hover para os itens de idioma. */
+#idiomas li:hover {
+  transform: translateY(-5px); /* Move o item ligeiramente para cima. */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais intensa. */
+}
