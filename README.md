@@ -30,8 +30,8 @@ Desenvolvi algumas funcionalidades importantes para aprimorar a experiência no 
 
 ## 🔗 Acesse Meu Portfólio
 
-Você pode visitar meu portfólio online e explorar todos os detalhes do meu trabalho <br>
-**[clicando aqui](https://lfnje.github.io/Seu-Repositorio-Portifolio-aqui/)**.
+Você pode visitar meu portfólio online e explorar todos os detalhes do meu trabalho: <br>
+**[Portfólio Digital com Integração de Tecnologias Web](https://lfnje.github.io//)**
 
 ---
 
