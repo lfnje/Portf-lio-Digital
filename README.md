@@ -45,3 +45,8 @@ Se quiser mais informações, discutir possíveis colaborações ou oportunidade
 * **Instagram:** [instagram.com/_lfnje/](https://www.instagram.com/_lfnje/)
 
 ---
+
+<p align="center">
+  <em>“A tecnologia não só resolve problemas, como também cria oportunidades.”</em><br>
+  <strong>Luiz Filipe Nogueira</strong>
+</p>
