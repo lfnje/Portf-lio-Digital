@@ -28,6 +28,14 @@ Desenvolvi algumas funcionalidades importantes para aprimorar a experiência no 
 
 ---
 
+### Estrutura da Solução
+
+<p align="center">
+    <img src="img/" alt="Estrutura de Solução" style="width:75%; max-width:600px;">
+</p>
+
+---
+
 ## 🔗 Acesse Meu Portfólio
 
 Você pode visitar meu portfólio online e explorar todos os detalhes do meu trabalho: <br>
