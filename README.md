@@ -31,7 +31,7 @@ Desenvolvi algumas funcionalidades importantes para aprimorar a experiência no 
 ### Estrutura da Solução
 
 <p align="center">
-    <img src="Portfólio Estrutura" alt="Estrutura de Solução" style="width:75%; max-width:600px;">
+    <img src="Portfólio Estrutura.png" alt="Estrutura de Solução" style="width:75%; max-width:600px;">
 </p>
 
 ---
