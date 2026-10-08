@@ -28,20 +28,6 @@ Desenvolvi algumas funcionalidades importantes para aprimorar a experiência no 
 
 ---
 
-### Estrutura da Solução
-
-<p align="center">
-    Portf-lio-Digital/
-        ├── index.html
-        ├── mainResponsive.js
-        └── mainStyle.css
-        ├── img/
-        │   ├── Microcertificado - Ferramentas e Aplicações da Inteligência Artificial.jpg
-        │   └── Microcertificado - Técnicas e Ferramentas para Projetos.jpg
-</p>
-
----
-
 ## 🔗 Acesse Meu Portfólio
 
 Você pode visitar meu portfólio online e explorar todos os detalhes do meu trabalho: <br>
