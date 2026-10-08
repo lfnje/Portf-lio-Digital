@@ -31,7 +31,13 @@ Desenvolvi algumas funcionalidades importantes para aprimorar a experiência no 
 ### Estrutura da Solução
 
 <p align="center">
-    <img src="Portfólio Estrutura.png" alt="Estrutura de Solução" style="width:75%; max-width:600px;">
+    Portf-lio-Digital/
+        ├── index.html
+        ├── mainResponsive.js
+        └── mainStyle.css
+        ├── img/
+        │   ├── Microcertificado - Ferramentas e Aplicações da Inteligência Artificial.jpg
+        │   └── Microcertificado - Técnicas e Ferramentas para Projetos.jpg
 </p>
 
 ---
