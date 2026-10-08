@@ -1,6 +1,5 @@
 <h1 align="center" font-weight: bold;">🚀 Meu Portfólio Digital - Luiz Filipe Nogueira</h1>
-
-## 🎯 Sobre Este Projeto
+🎯 Sobre Este Projeto
 
 Este é o **meu portfólio digital**. Meu objetivo principal com este site é **apresentar meus projetos, habilidades e experiências**, servindo como um currículo interativo e uma demonstração prática das minhas competências em desenvolvimento web. <br>
 Sou um Analista e Desenvolvedor de Sistemas em formação e este site reflete um pouco do que aprendi durante a minha jornada.
