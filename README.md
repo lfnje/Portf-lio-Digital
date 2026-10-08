@@ -1,4 +1,4 @@
-<div style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">🚀 Meu Portfólio Digital - Luiz Filipe Nogueira</div>
+<h1 align="center">🚀 Meu Portfólio Digital - Luiz Filipe Nogueira</h1>
 
 ## 🎯 Sobre Este Projeto
 
