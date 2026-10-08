@@ -1,4 +1,4 @@
-<h1 align="center" font-weight: bold;">🚀 Meu Portfólio Digital - Luiz Filipe Nogueira</h1>
+<h1 align="center">🚀 Meu Portfólio Digital - Luiz Filipe Nogueira</h1>
 
 ## 🎯 Sobre Este Projeto
 
